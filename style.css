@@ -25,6 +25,10 @@ body{
     background-color: black;
 }
 
+header{
+    position: relative;
+}
+
 .menu{
     position: fixed;
     color: white;
@@ -158,3 +162,144 @@ body{
 
 }
 
+/*music panel*/
+
+.music-panel{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--black--);
+}
+
+.music-div{
+    margin: 4rem 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;  
+}
+
+.music-div h2{
+    width: 80%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.stream-app{
+    width: 80%;
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.stream-btn{
+    background-color: transparent;
+    color: var(--white--);
+    border: 1px solid var(--white--);
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+}
+
+.music-div h3{
+    width: 80%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.track{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    background-color: transparent
+
+}
+
+.track-number{
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white--);
+}
+
+.play-btn-track{
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%); 
+    color: var(--white--);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.song-info{
+    position: absolute;
+    left: 4.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white--);
+}
+
+.music-time{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white--);
+}
+.share-btn-track{
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white--);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*release section*/
+
+.release{
+    width: 100%;
+    
+}
+
+.release-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.release-container h4{
+    margin:6rem 0 2rem;
+    width: 80%;
+    text-align: left;
+    color: var(--white--);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.release-div{
+    min-width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.release-div img{
+    width: 200px;
+    height: auto;
+}
+.album-div p{
+    color: var(--white--);
+    
+}
