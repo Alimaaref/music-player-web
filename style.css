@@ -300,7 +300,7 @@ header{
     position: relative;
     width: 80%;
     height: 100px;
-    background-color: transparent
+    background-color: transparent;
 
 }
 
@@ -321,14 +321,37 @@ header{
     background-color: transparent;
     cursor: pointer;
     border: none;
+    font-size: larger;
 }
-
+.pause-btn-track{
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%); 
+    color: var(--white--);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: none;
+    color: var(--green--);
+    font-size: larger;
+}
+.play-btn-track.played{
+    display: none;
+}
+.pause-btn-track.played{
+    display: inline-block;
+}
 .song-info{
     position: absolute;
     left: 4.5rem;
     top: 50%;
     transform: translateY(-50%);
     color: var(--white--);
+    font-weight: bold;
+}
+.singer-name{
+    font-weight: normal;
 }
 
 .music-time{
