@@ -9,6 +9,9 @@ const pauseBtns = document.querySelectorAll('pause-btn-track')
  */
 const tracks = document.querySelectorAll('.track')
 
+const playBtn = document.querySelector('.play-btn')
+const shareBtn = document.querySelector('.share-btn');
+
 //sidebar functionality
 menuBtn.addEventListener('click',()=>{
     sidebar.classList.add('active')
@@ -61,4 +64,33 @@ function stopOther(){
         })
     })
 }
+
+//hero play btn
+playBtn.addEventListener('click', () => {
+    const audio = playBtn.parentElement.querySelector('audio');
+    const equalizer = playBtn.querySelector('.equalizer');
+    const playText = playBtn.querySelector('.play-text');
+
+    if (audio.paused) {
+        audio.play();
+        equalizer.classList.add('active');
+        playBtn.innerHTML = 'Pause Now';
+    } else {
+        audio.pause();
+        equalizer.classList.remove('active');
+        playBtn.innerHTML = 'Play Now';
+    }
+});
+
+
+//share btn
+shareBtn.addEventListener('click', () => {
+    navigator.share({
+        title: 'A Sky Full of Stars',
+        text: 'Listen to this song 🎵',
+        url: 'https://www.youtube.com/watch?v=VPRjCeoBqrI'
+    });
+});
+
+
 
