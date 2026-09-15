@@ -69,16 +69,24 @@ function stopOther(){
 playBtn.addEventListener('click', () => {
     const audio = playBtn.parentElement.querySelector('audio');
     const equalizer = playBtn.querySelector('.equalizer');
-    const playText = playBtn.querySelector('.play-text');
+    
 
     if (audio.paused) {
         audio.play();
-        equalizer.classList.add('active');
-        playBtn.innerHTML = 'Pause Now';
+        playBtn.innerHTML = `
+        <span class="equalizer active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+            Pause Now`;
     } else {
         audio.pause();
         equalizer.classList.remove('active');
-        playBtn.innerHTML = 'Play Now';
+        playBtn.innerHTML = `
+            <i class="  fa-solid fa-play"></i>
+                Play Now`;
     }
 });
 

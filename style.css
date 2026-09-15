@@ -237,17 +237,41 @@ header{
     border: none;
     color: var(--white--);
     cursor: pointer;
+    width: 180px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-wrap: nowrap;
+}
+.play-btn:hover .fa-play{
+    animation: swing 0.6s ease-in-out infinite alternate;
 }
 
+
+@keyframes swing {
+    from {
+        transform: rotate(-25deg);
+    }
+
+    to {
+        transform: rotate(25deg);
+    }
+}   
 .play-btn:active {
     outline: none;
 }
 
 .equalizer {
     display: inline-flex;
+    visibility: hidden;
     align-items: center;
     gap: 3px;
     height: 16px;
+}
+.equalizer.active{
+    visibility:visible;
 }
 
 .equalizer span {
@@ -290,6 +314,10 @@ header{
     border: white solid 1px;
     cursor: pointer;
 
+}
+.share-btn:hover{
+    color: var(--green--);
+    border-color: var(--green--);
 }
 
 
@@ -335,6 +363,9 @@ header{
     border: 1px solid var(--white--);
     padding: 1.2rem 2rem;
     cursor: pointer;
+}
+.stream-btn:hover{
+    color: var(--blue--);
 }
 
 .music-div h3{
