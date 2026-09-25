@@ -660,111 +660,6 @@ header{
         top: 1.1rem;
         left: 1.6rem;
     }
-    .hero {
-        gap: 3rem;
-        padding: 0 3rem;
-    }
-
-    .album-side img {
-        width: 350px;
-    }
-
-    .album-side p {
-        left: -120px;
-        bottom: 100px;
-    }
-
-    .text-side {
-        gap: 1.5rem;
-    }
-
-    .text-side h1 {
-        font-size: 3rem;
-    }
-
-    .text-side span {
-        font-size: 2.2rem;
-    }
-
-    .btn-div {
-        gap: 1rem;
-    }
-
-    .play-btn {
-        width: 150px;
-        height: 55px;
-        padding: 1rem;
-    }
-.hero {
-        gap: 3rem;
-        padding: 0 3rem;
-    }
-
-    .album-side img {
-        width: 350px;
-    }
-
-    .album-side p {
-        left: -120px;
-        bottom: 100px;
-    }
-
-    .text-side {
-        gap: 1.5rem;
-    }
-
-    .text-side h1 {
-        font-size: 3rem;
-    }
-
-    .text-side span {
-        font-size: 2.2rem;
-    }
-
-    .btn-div {
-        gap: 1rem;
-    }
-
-    .play-btn {
-        width: 150px;
-        height: 55px;
-        padding: 1rem;
-    }
-    .hero {
-        gap: 3rem;
-        padding: 0 3rem;
-    }
-
-    .album-side img {
-        width: 350px;
-    }
-
-    .album-side p {
-        left: -120px;
-        bottom: 100px;
-    }
-
-    .text-side {
-        gap: 1.5rem;
-    }
-
-    .text-side h1 {
-        font-size: 3rem;
-    }
-
-    .text-side span {
-        font-size: 2.2rem;
-    }
-
-    .btn-div {
-        gap: 1rem;
-    }
-
-    .play-btn {
-        width: 150px;
-        height: 55px;
-        padding: 1rem;
-    }
 
     .hero {
         gap: 3rem;
@@ -830,17 +725,7 @@ header{
         }
     
         .icon {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 2.5rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-    
-    
+            display: none;
         }
     
         .menu {
@@ -851,8 +736,84 @@ header{
         }
     
         .websvg {
+            position: fixed;
             top: 1.1rem;
             left: 1.6rem;
         }
+ 
+        .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        }
+        .album-side {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+        }
+        .album-side img{
+            width:min(80%,350px);
+        }
+        .album-side p {
+        position: static;
+        transform: none;
+        margin: 1rem 0 1rem;
+        text-align: center;
+        }
+      
+        .text-side {
+        gap: 1rem;
+    }
+
+    .text-side h1 {
+        font-size: 1.9rem;
+    }
+
+    .text-side span {
+        font-size: 1rem;
+    }
+
+    .btn-div {
+        gap: 0.5rem;
+    }
+
+    .play-btn {
+        width: 150px;
+        height: 55px;
+        padding: 0.5rem;
+    }
+    .stream-app{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap ;
+    margin-top: 1rem;
+
+    }
+
+    .stream-btn{
+    background-color: transparent;
+    color: var(--white--);
+    border: 1px solid var(--white--);
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    }
+    .footer-text-div{
+        flex-direction: column;
+    }
+    .footer-text-div div p{
+        font-size: 0.6rem;
+    }
+    .footer-last{
+        margin-top: 0.5rem;
+    }
+    .p-footer{
+        font-size: 0.5rem;
+    }
+        
 
 }
